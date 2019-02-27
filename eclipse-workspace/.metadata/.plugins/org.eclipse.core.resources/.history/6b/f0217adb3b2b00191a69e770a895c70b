@@ -1,0 +1,116 @@
+package StringUse;
+
+import java.util.Scanner;
+
+public class UseString {
+
+	public static void main(String[] args) {
+		String m, n, o;
+		Boolean retVal;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string: at least 20 char and groung of words:");
+		m = in.nextLine();	
+		System.out.println("String you entered is: " + m);
+		System.out.println("Showing the length of the String");
+		//1. Length of a string
+		System.out.println("Length of String including space is: " + m.length());
+		
+		//2. Print String from a specific position
+		System.out.println("String from index 3: " + m.substring(3));
+		System.out.println("String from index 10 to 15: " + m.substring(10, 15));
+		
+		//3. Print String all upper case
+		System.out.println("Print String in all upper Case: " + m.toUpperCase());
+	
+		//4. Print String all lower case
+		System.out.println("Print String in all lower Case: " + m.toLowerCase());
+	
+		//5. Letter Replacement
+		System.out.println("All letter of A will be replaced by B if present:");
+		System.out.println("New String after the change: " + m.replace('a','b'));
+		System.out.println("All letter of A will be replaced by * if present:");
+		System.out.println("New String after the change: " + m.replace('a','*'));
+		
+		//6. Return Character from a specific position
+		char ch1 = m.charAt(0);
+		char ch2 = m.charAt(5);
+		System.out.println("Character at 0 index is: "+ch1);
+		System.out.println("Character at 5th index is: "+ch2);
+		
+		//7. Return output by single character
+		System.out.println("Output by single character:");
+		for(int i=0; i<=m.length()-1; i++) {
+			System.out.println(m.charAt(i));
+		}
+	
+		//8. Word search
+		System.out.println("Enter the word you want to search: ");
+		n = in.nextLine();
+		if (m.contains("n")) {
+			System.out.println(n + " word found in the given string");
+		} else {
+			System.out.println(n + " word is not found in the given string");
+		}
+	
+		//9. String Match
+		System.out.println("Enter two strings freshly for comparison : ");
+		System.out.println("Enter a string : ");
+		n = in.nextLine();	
+		System.out.println(m);
+		System.out.println("Enter another string: ");
+		o = in.nextLine();
+		if (n.equals(o) == true) {
+			System.out.println("Match found");
+		} else {
+			System.out.println("Match not found");
+		}
+		
+		//10. String Trimming
+		System.out.println("Enter a string for Trimming: ");
+		n = in.nextLine();	
+		System.out.println("String before trim: "+ n);
+	    System.out.println("String after trim: "+ n.trim());
+	    
+	    //11. Concatenate two String
+	    System.out.println("Enter two strings freshly for Cocatenation : ");
+		System.out.println("Enter a string : ");
+		n = in.nextLine();	
+		System.out.println(m);
+		System.out.println("Enter another string: ");
+		o = in.nextLine();
+		n = n.concat(o);
+		System.out.println("Result after adding two string: " + n);
+		
+		//12. Matching end word in a string
+		System.out.println("Enter two strings freshly for matching end word : ");
+		System.out.println("Enter a string : ");
+		n = in.nextLine();	
+		System.out.println(m);
+		System.out.println("Enter a end word for matching: ");
+		o = in.nextLine();
+		retVal = n.endsWith(o);
+		System.out.println("Returned Value = " +retVal);
+		
+		//13. Printing Hash Code
+		System.out.println("Enter a string for getting Hash Code: ");
+		System.out.println("Enter a string : ");
+		n = in.nextLine();	
+		System.out.println("HashCode for String is: " + n.hashCode());
+		
+		//14. Spliting the String
+		System.out.println("Enter a string for spliting: ");
+		System.out.println("Enter a string : ");
+		n = in.nextLine();	
+		for (String retval: n.split("-")) {
+	         System.out.println(retval);
+		}
+		
+	
+	
+	
+	}
+	
+	
+
+	}
+

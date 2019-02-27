@@ -1,0 +1,42 @@
+package Laptop;
+
+import java.util.Scanner;
+
+public class Laptop {
+
+		public String LaptopName;
+		public int LaptopNumber;
+			//constructor 1
+			public Laptop() {}
+			
+			//constructor 2
+			public Laptop(String LaptopName) {
+				System.out.println("Please enter Laptop Name: ");
+				Scanner in = new Scanner(System.in);
+				LaptopName= in.nextLine();
+				this.LaptopName = LaptopName;
+				System.out.println(LaptopName);
+			}
+			//constructor 3
+			public Laptop(int LaptopNumber) {
+				System.out.println("Please enter Laptop Number: ");
+				Scanner in = new Scanner(System.in);
+				LaptopNumber= in.nextInt();
+				this.LaptopNumber = LaptopNumber;
+				System.out.println(LaptopNumber);
+			
+			}
+			public void setName(String LaptopName) {
+				this.LaptopName = LaptopName;
+			}
+			
+			public void displayName() {
+				System.out.println(this.LaptopName);
+			}
+			
+			//public void displayAge() {
+				//System.out.println(this.age);
+			//}
+			
+
+	}

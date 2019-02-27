@@ -1,0 +1,24 @@
+package Life;
+
+public class NewLife {
+public String name;
+public int age;
+	public NewLife() {}
+	public NewLife(String name) {
+		this.name = name;
+		System.out.println(name);
+	}
+	
+	public NewLife(int name) {
+		this.age = name;
+		System.out.println(name);
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void displayName() {
+		System.out.println(this.name);
+	}
+	}
+
+

@@ -1,0 +1,20 @@
+package StringUse;
+
+import java.util.Scanner;
+
+public class UseString {
+
+	public static void main(String[] args) {
+		String m, n;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string: at least 20 char and groung of words:");
+		m = in.nextLine();	
+		System.out.println("String you entered is: " + m);
+		System.out.println("Showing the length of the String");
+		//Length of a string
+		System.out.println("Length of String is: " + m.length());
+		
+	}
+
+	}
+

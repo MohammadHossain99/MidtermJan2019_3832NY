@@ -1,0 +1,13 @@
+package StringUse;
+
+public class StringUpper {
+
+	public static void main(String[] args) {
+		String m = "Mohammad";
+		System.out.println(m.toUpperCase());
+		System.out.println(m.toLowerCase());		
+		System.out.println(m);		
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package test;
+
+import java.util.Scanner; //importing this for input//
+
+public class test1 {
+		public static void main(String[] args)
+		{
+			Scanner in = new Scanner(System.in);
+			System.out.println("What is your hobby?");
+			String name = in.nextLine();	
+			System.out.println("What is your age?");
+			int age = in.nextInt();
+			System.out.println("My hobby is" + " "+ name);
+			System.out.println("My Age is" + " "+ age);
+		}
+
+}

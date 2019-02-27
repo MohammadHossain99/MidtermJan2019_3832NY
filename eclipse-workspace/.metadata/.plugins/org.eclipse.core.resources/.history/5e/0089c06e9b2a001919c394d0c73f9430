@@ -1,0 +1,15 @@
+package StringUse;
+
+import java.util.Scanner;
+
+public class StringWordSearch {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string : ");
+		m = in.Line();	
+		System.out.println(m);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package StringUse;
+
+import java.util.Scanner;
+
+public class StringCompare {
+
+	public static void main(String[] args) {
+		String m, n;
+		boolean o;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string : ");
+		m = in.nextLine();	
+		System.out.println(m);
+		System.out.println("Enter another string: ");
+		n = in.nextLine();
+		o = m.equals(n);
+		if (true) {
+			System.out.println("Match found");
+		} 
+		
+		if (false) {
+			System.out.println("Match not found");
+		}
+	}
+}
+

@@ -1,0 +1,18 @@
+package Laptop;
+
+public class TestLaptop {
+		
+	public static void main(String[] args) {
+		Laptop Laptop1 = new Laptop("");
+		Laptop1.setName();
+		//Laptop1();
+		Laptop1.displayName();
+
+		Laptop Laptop2 = new Laptop();
+		Laptop2.displayName();
+		//Laptop1 = new NewLife(2);
+		//l.displayAge();
+	}
+
+	
+}

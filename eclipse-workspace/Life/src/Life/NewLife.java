@@ -1,0 +1,30 @@
+package Life;
+
+public class NewLife {
+public String name;
+public int age;
+	//constructor 1
+	public NewLife() {}
+	//constructor 2
+	public NewLife(String name) {
+		this.name = name;
+		System.out.println(name);
+	}
+	//constructor 3
+	public NewLife(int age) {
+		this.age = 1;
+		System.out.println(age);
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void displayName() {
+		System.out.println(this.name);
+	}
+	public void displayAge() {
+		System.out.println(this.age);
+	}
+	
+	}
+
+

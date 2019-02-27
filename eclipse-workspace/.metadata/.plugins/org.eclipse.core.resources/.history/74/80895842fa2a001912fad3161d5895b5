@@ -1,0 +1,24 @@
+package StringUse;
+
+import java.util.Scanner;
+
+public class UseString {
+
+	public static void main(String[] args) {
+		String m, n;
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter a string: at least 20 char and groung of words:");
+		m = in.nextLine();	
+		System.out.println("String you entered is: " + m);
+		System.out.println("Showing the length of the String");
+		//Length of a string
+		System.out.println("Length of String including space is: " + m.length());
+		
+		//Print String from a specific position
+		System.out.println("String from index 3: " + m.substring(3));
+		System.out.println("String from index 10 to 15: " + m.substring(10, 15));
+		
+	}
+
+	}
+

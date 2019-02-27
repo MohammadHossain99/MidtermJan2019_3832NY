@@ -1,0 +1,16 @@
+package Operator;
+
+import java.util.Scanner;
+
+public class UseOperator {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter 1st number:");
+		int input1 = in.nextInt();
+		System.out.println("Enter 2nd number:");
+		
+		
+	}
+
+}
